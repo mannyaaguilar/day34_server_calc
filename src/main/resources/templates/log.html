@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Log</title>
+
+    <link rel="stylesheet" th:href="@{/bootstrap.css}"/>
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+
+    <script type="text/javascript" th:src="@{/jquery.js}"></script>
+    <script type="text/javascript" th:src="@{/client.js}"></script>
+    <script type="text/javascript" th:src="@{/thelog.js}"></script>
+
+</head>
+<body>
+<div id="thelog" class="container">
+    <div class="row">
+        <button onclick="goHome()" class="btn btn-info">Return to Calculator</button>
+    </div>
+    <div class="row" th:each="entry : ${mathrepo}">
+        <div class="col-md-12">
+            <p th:text="${entry.num1} + ' ' + ${entry.op} + ' ' + ${entry.num2} + ' = ' + ${entry.solution} " class="solution"></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+
+    <link rel="stylesheet" th:href="@{/bootstrap.css}"/>
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+
+    <script type="text/javascript" th:src="@{/jquery.js}"></script>
+    <script type="text/javascript" th:src="@{/client.js}"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <button onclick="goLog()" class="btn btn-info">Go to Log</button>
+    </div>
+
+    <div class="row">
+        <div data-kitty="1" id="calc1" class="btn-calc col-md-2 btn btn-info">
+            <p>1</p>
+        </div>
+        <div data-kitty="2" id="calc2" class="btn-calc col-md-2 btn btn-info">
+            <p>2</p>
+        </div>
+        <div data-kitty="3" id="calc3" class="btn-calc col-md-2 btn btn-info">
+            <p>3</p>
+        </div>
+        <div data-puppy="add" id="opAdd" class="btn-calc col-md-2 btn btn-info">
+            <p>+</p>
+        </div>
+    </div>
+    <div class="row">
+        <div data-kitty="4" id="calc4" class="btn-calc col-md-2 btn btn-info">
+            <p>4</p>
+        </div>
+        <div data-kitty="5" id="calc5" class="btn-calc col-md-2 btn btn-info">
+            <p>5</p>
+        </div>
+        <div data-kitty="6" id="calc6" class="btn-calc col-md-2 btn btn-info">
+            <p>6</p>
+        </div>
+        <div data-puppy="sub" id="opSub" class="btn-calc col-md-2 btn btn-info">
+            <p>-</p>
+        </div>
+    </div>
+    <div class="row">
+        <div data-kitty="7" id="calc7" class="btn-calc col-md-2 btn btn-info">
+            <p>7</p>
+        </div>
+        <div data-kitty="8" id="calc8" class="btn-calc col-md-2 btn btn-info">
+            <p>8</p>
+        </div>
+        <div data-kitty="9" id="calc9" class="btn-calc col-md-2 btn btn-info">
+            <p>9</p>
+        </div>
+        <div data-puppy="multi" id="opMulti" class="btn-calc col-md-2 btn btn-info">
+            <p>*</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 btn btn-info">
+            <p></p>
+        </div>
+        <div data-kitty="0" id="calc0" class="btn-calc col-md-2 btn btn-info">
+            <p>0</p>
+        </div>
+        <div class="col-md-2 btn btn-info">
+            <p></p>
+        </div>
+        <div data-puppy="divide" id="opDiv" class="btn-calc col-md-2 btn btn-info">
+            <p>/</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
